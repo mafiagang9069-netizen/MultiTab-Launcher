@@ -1,0 +1,21 @@
+{
+  "short_name": "MultiTab",
+  "name": "MultiTab Launcher",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png?v=0fd752bc",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon-512x512.png?v=0fd752bc",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0F172A",
+  "theme_color": "#6366F1",
+  "display": "standalone",
+  "orientation": "portrait"
+}
