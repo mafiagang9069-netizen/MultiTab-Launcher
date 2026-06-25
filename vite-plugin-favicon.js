@@ -121,7 +121,9 @@ export default function faviconPlugin() {
     // 3. Locate browser for headless screenshot rendering
     const browserPath = findBrowserPath();
     if (!browserPath) {
-      throw new Error('[Favicon Plugin] No compatible browser (Edge or Chrome) found for headless favicon rendering!');
+      console.warn('[Favicon Plugin] WARNING: No compatible browser (Edge or Chrome) found for headless favicon rendering. Skipping regeneration and using existing assets on disk.');
+      logoHash = currentHash;
+      return;
     }
 
     // 4. Create temporary html rendering page
